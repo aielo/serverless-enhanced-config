@@ -1,3 +1,13 @@
+# VS Code
+/.vscode
+
+# Lab (test/debug sandbox)
+.lab
+
+# Vagrant
+.vagrant
+*.box
+
 # Logs
 logs
 *.log

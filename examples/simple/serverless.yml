@@ -1,0 +1,23 @@
+service: simple
+
+plugins:
+  - serverless-core-hooks
+  - ../..
+
+provider:
+  name: aws
+
+custom:
+  coreHooks:
+    objects:
+      - pluginManager
+  enhancedConfig:
+    template: template.yml
+    variables:
+      service: simple
+      function:
+        name: myfunc
+        handler: handlers/myfunc.main
+        path: mypath/myfunc
+        method: get
+        cors: true

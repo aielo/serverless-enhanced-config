@@ -1,0 +1,28 @@
+service: {{ service }}
+
+package:
+  individually: true
+
+plugins:
+  - serverless-bundle
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, env:stage, 'dev'}
+  region: ${opt:region, env:region, 'us-east-1'}
+
+functions:
+  {{ function.name }}:
+    handler: {{ function.handler }}
+    events:
+      - http:
+          path: {{ function.path }}
+          method: {{ function.method }}
+          cors: {{ function.cors }}
+          authorizer: aws_iam
+
+resources:
+  - ${file(includes/api-gateway.yml)}

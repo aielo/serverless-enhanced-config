@@ -4,8 +4,6 @@ package:
   individually: true
 
 plugins:
-  - serverless-bundle
-  - serverless-offline
   - serverless-dotenv-plugin
 
 provider:

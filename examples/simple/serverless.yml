@@ -1,16 +1,12 @@
 service: simple
 
 plugins:
-  - serverless-core-hooks
   - ../..
 
 provider:
   name: aws
 
 custom:
-  coreHooks:
-    objects:
-      - pluginManager
   enhancedConfig:
     template: template.yml
     variables:

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/aielo/serverless-enhanced-config#readme",
   "dependencies": {
     "lodash": "^4.17.15",
-    "mustache": "^4.0.0"
+    "mustache": "^4.0.0",
+    "serverless-core-hooks": "^0.0.2-3"
   }
 }

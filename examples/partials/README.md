@@ -1,4 +1,4 @@
-### Example: Partials
+### Example: partials
 
 This example demonstrates the usage of **serverless-enhanced-config** with [*partials*](https://github.com/janl/mustache.js#partials).
 

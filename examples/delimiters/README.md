@@ -1,4 +1,4 @@
-### Example: Delimiters
+### Example: delimiters
 
 This example demonstrates the usage of **serverless-enhanced-config** with [*custom delimiters*](https://github.com/janl/mustache.js#custom-delimiters).
 

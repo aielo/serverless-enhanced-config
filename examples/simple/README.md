@@ -1,4 +1,4 @@
-### Example: Simple
+### Example: simple
 
 This example demonstrates a basic usage of **serverless-enhanced-config**.
 

@@ -73,15 +73,16 @@ sls print
 Most of the **mustache.js** features are supported, such as:
 - Template and variables decoupled
 - Partials (or includes)
-- Sections
+- Sections and inverted sections
 - Custom delimiters
 
-Serverless native variables `${self.*}`, `${env.*}` and `${opt.*}` are supported within variables and template/partials. Same is true for file includes `${file(*)}`.
+Serverless native variables `${self.*}`, `${env.*}` and `${opt.*}` are supported within variables and template/partials. Same is true for file includes `${file(*)}` and other native functions.
 
 ## Examples
 - [Simple](https://github.com/aielo/serverless-enhanced-config/tree/master/examples/simple)
 - [Partials](https://github.com/aielo/serverless-enhanced-config/tree/master/examples/partials)
 - [Delimiters](https://github.com/aielo/serverless-enhanced-config/tree/master/examples/delimiters)
+- [Sections](https://github.com/aielo/serverless-enhanced-config/tree/master/examples/sections)
 
 ## Author
 Ricardo Aielo [@aielo](https://github.com/aielo/)

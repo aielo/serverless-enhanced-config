@@ -1,7 +1,7 @@
 service: delimiters
 
 plugins:
-  - ../..
+  - serverless-enhanced-config
 
 provider:
   name: aws

@@ -1,0 +1,24 @@
+service: partials
+
+plugins:
+  - ../..
+
+provider:
+  name: aws
+
+custom:
+  enhancedConfig:
+    template: template.yml
+    variables:
+      service: partials
+      function:
+        name: myfunc
+        handler: handlers/myfunc.main
+        path: mypath/myfunc
+        method: get
+        cors: true
+    partials:
+      service: partials/service.yml
+      plugins: partials/plugins.yml
+      functions: partials/functions.yml
+      function: partials/function.yml

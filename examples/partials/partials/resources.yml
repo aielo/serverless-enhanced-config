@@ -1,0 +1,2 @@
+resources:
+  - ${file(includes/api-gateway.yml)}

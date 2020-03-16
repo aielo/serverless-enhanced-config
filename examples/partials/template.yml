@@ -1,0 +1,17 @@
+{{> service }}
+
+package:
+  individually: true
+
+{{> plugins }}
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, env:stage, 'dev'}
+  region: ${opt:region, env:region, 'us-east-1'}
+
+{{> functions }}
+
+resources:
+  - ${file(includes/api-gateway.yml)}

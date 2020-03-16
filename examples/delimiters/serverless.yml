@@ -1,0 +1,26 @@
+service: delimiters
+
+plugins:
+  - ../..
+
+provider:
+  name: aws
+
+custom:
+  enhancedConfig:
+    template: template.yml
+    variables:
+      service: delimiters
+      function:
+        name: myfunc
+        handler: handlers/myfunc.main
+        path: mypath/myfunc
+        method: get
+        cors: true
+    partials:
+      plugins: partials/plugins.yml
+      functions: partials/functions.yml
+      function: partials/function.yml
+    delimiters:
+      - '[['
+      - ']]'

@@ -1,0 +1,35 @@
+service: ${self:custom.enhancedConfig.variables.service}
+
+plugins:
+  - serverless-enhanced-config
+
+provider:
+  name: ${self:custom.enhancedConfig.variables.provider}
+
+custom:
+  enhancedConfig:
+    template: template.yml
+    variables:
+      service: sections
+      provider: aws
+      cors: ${strToBool(${opt:cors, env:cors, 'true'})}
+      path: mypath
+      functions:
+        - 
+          name: index
+          method: get
+        - 
+          name: post
+        - 
+          name: get
+          path: mypath/{id}
+        - 
+          name: update
+          path: mypath/{id}
+        - 
+          name: delete
+          path: mypath/{id}
+    partials:
+      service: partials/service.yml
+      plugins: partials/plugins.yml
+      function: partials/function.yml

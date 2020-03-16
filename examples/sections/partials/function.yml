@@ -1,0 +1,8 @@
+  {{ name }}:
+    handler: handlers/{{ name }}.main
+    events:
+      - http:
+          path: {{ path }}
+          method: {{#method}}{{ method }}{{/method}}{{^method}}{{ name }}{{/method}}
+          cors: {{ cors }}
+          authorizer: aws_iam

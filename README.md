@@ -1,4 +1,4 @@
-# serverless-enhanced-config
+# serverless-enhanced-config ![npm](https://img.shields.io/npm/v/serverless-enhanced-config) ![npm](https://img.shields.io/npm/l/serverless-enhanced-config)
 
 A serverless plugin to enhance configuration with template features and easier variable handling.
 

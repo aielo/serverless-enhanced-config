@@ -1,15 +1,40 @@
 {
   "name": "serverless-enhanced-config",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Serverless plugin to enhance configuration with template features and easier variable handling.",
   "main": "./lib/EnhancedConfig.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aielo/serverless-enhanced-config.git"
   },
+  "keywords": [
+    "serverless enhanced configuration",
+    "serverless enhanced",
+    "serverless configuration",
+    "serverless config",
+    "serverless template",
+    "serverless partials",
+    "serverless partial",
+    "serverless include",
+    "serverless plugin",
+    "serverless",
+    "enhanced",
+    "configuration",
+    "config",
+    "template",
+    "partials",
+    "partial",
+    "include",
+    "plugin"
+  ],
+  "files": [
+    "lib",
+    "package.json",
+    "README.md"
+  ],
   "author": "Ricardo Aielo <ricardo.aielo@gmail.com>",
   "license": "ISC",
   "bugs": {

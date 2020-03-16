@@ -1,6 +1,6 @@
 {
   "name": "serverless-enhanced-config",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "Serverless plugin to enhance configuration with template features and easier variable handling",
   "main": "./lib/EnhancedConfig.js",
   "scripts": {
